@@ -1,8 +1,47 @@
-<!-- ### Exercise 2
-
-1. Create a simple page having a header, main content, and a footer.
-
-2. Inside the header keep the brand name to the left and all the navigation to the right.
-
-3. Inside the main content crate three columns. In each column take one image and a paragraph below the image.
-4. Using float is necessary. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assests/stylesheets/style.css">
+    <title>Content Positioning | Exercise 2</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#" class="brand">
+                <img src="./assests/media/altcampus-logo.svg" alt="Brand-Name">
+            </a>
+            <nav class="nav">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="box clearfix">
+            <article class="column">
+                <img class="article-img" src="./assests/media/bulb-in-hand.png" alt="bulb-in-hand">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur qui numquam animi maiores fugiat vitae dicta quaerat beatae a facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae dignissimos et aliquam, voluptatum voluptatem? Odit, reiciendis illo ut dolor vero eaque explicabo rem suscipit!</p>
+            </article>
+            <article class="column">
+                <img class="article-img" src="./assests/media/bulb-in-hand.png" alt="bulb-in-hand">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis suscipit molestias nihil, a labore optio officiis esse harum nisi eligendi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae dignissimos et aliquam, voluptatum voluptatem? Odit, reiciendis illo ut dolor vero eaque explicabo rem suscipit!</p>
+            </article>
+            <article class="column">
+                <img class="article-img" src="./assests/media/bulb-in-hand.png" alt="bulb-in-hand">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem unde magni officia doloremque itaque cumque. Illo consectetur earum distinctio nam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis beatae dignissimos et aliquam, voluptatum voluptatem? Odit, reiciendis illo ut dolor vero eaque explicabo rem suscipit!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="connect " >
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkedin</a>
+        </div>
+    </footer>
+</body>
+</html>
