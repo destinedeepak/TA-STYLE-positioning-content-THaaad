@@ -1,0 +1,280 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* custom style  */
+*{
+    box-sizing: border-box;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after{
+    clear:both;
+}
+body{
+    font-family: sans-serif;
+    
+}
+.lighter{
+    font-weight:unset;
+}
+
+/* header */
+.header{
+    height: 450px;
+    background-color: #5385C1;
+    
+}
+.container{
+    max-width: 1040px;
+    margin: 0 auto;
+    
+}
+.heading{
+    text-align: center;
+    position: relative;
+    float: left;
+    left:230px;
+    top: 180px;
+}
+.heading h1{
+    font-size: 48px;
+    color: white;
+}
+.heading p{
+    font-size: 15px;
+    padding-top: 15px;
+    color: rgb(240, 217, 217);
+}
+header .aside{
+    float: left;
+    position: relative;
+    top: 70px;
+}
+header .aside a{
+    text-decoration: none;
+     color: white;
+     font-size:15px;
+     font-weight: bold;
+}
+header .nav{
+    float:left;
+    position: relative;
+    top: 75px;
+    left: 400px;
+}
+header .nav a{
+    text-decoration: none;
+     color: rgb(240, 217, 217);
+     font-size:12px;
+     margin-left: 15px;
+}
+
+/* section  */
+.blogs{
+    height: 420px;
+    
+}
+.blog{
+    float: left;
+    width: 28%;
+    padding: 80px 0px;
+}
+.blog1, .blog2{
+    margin-right: 8%;
+}
+.blog h2{
+    font-size: 22px;
+    color:#5385C1;
+}.blog p{
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+    padding: 40px 0;
+    line-height: 1.5;
+}
+.blog button{
+    width: 80px;
+    height: 40px;
+    background-color: #5385C1;
+    border: none;
+}
+.blog button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    vertical-align: middle;
+}
+/* section2  */
+.team-info{
+    height: 700px;
+    background-color: #5385C1;
+}
+.team-info-header{
+     text-align: center;
+     padding-top: 100px;
+     padding-bottom: 60px;
+}
+.team-info-header h2{
+    font-size: 42px;
+    color: white;
+    margin-bottom: 15px;
+} 
+.team-info-header p{
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+} 
+.profile{
+    float: left;
+    width: 20%;
+    margin: 0 2.5%;
+    height: 320px;
+    border: 1px solid rgb(190, 190, 190);
+}
+.profile img{
+    width :150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-top:40px;
+    margin-left: 20px;
+}
+.profile h3{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    margin: 10px;
+}
+.profile p{
+    font-size: 15px;
+    text-align: center;
+    color: rgb(190, 190, 190);
+}
+
+/* section3  */
+
+.feed-header{
+    text-align: center;
+     padding-top: 100px;
+     padding-bottom: 60px;
+}
+.feed-header h2{
+    font-size: 42px;
+    color: #5385C1;
+    margin-bottom: 15px;
+}
+.feed-header p{
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+}
+.post{
+    float: left;
+    width: 47%;
+}
+.post1{
+    margin-right: 6%;
+}
+.post img{
+    width: 100%;
+    height: 180px;
+}
+.post h3{
+    margin-top: 30px;
+    font-size: 22px;
+    color:#5385C1;
+}
+.post p{
+    font-size: 15px;
+    color: rgb(190, 190, 190);
+    padding: 40px 0;
+    line-height: 1.5;
+}
+.post button{
+    width: 80px;
+    height: 40px;
+    background-color: #5385C1;
+    border: none;
+}
+.post button a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    vertical-align: middle;
+}
+/* footer */
+.footer{
+    margin-top: 90px;
+}
+hr{
+    border:none;
+    border-top:1px solid rgb(190, 190, 190);
+}
+
+.footer .aside{
+    float: left;
+    position: relative;
+    top: 35px;
+}
+.footer p{
+    font-size: 13px;
+    color: rgb(190, 190, 190);
+    padding-bottom: 50px;
+}
+.footer .nav{
+    float:left;
+    position: relative;
+    top: 35px;
+    left: 570px;
+}
+.footer .nav a{
+    text-decoration: none;
+     color: #5385C1;
+     font-size:18px;
+     padding: 0 10px;
+     
+}
